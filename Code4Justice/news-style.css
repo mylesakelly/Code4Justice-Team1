@@ -1,0 +1,217 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+}
+img {
+  height: 50vh;
+  width: 50vw;
+}
+button a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 14px 16px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+}
+nav a {
+  color: seashell;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 14px 16px;
+}
+.footer {
+  background: #1d1d23;
+  padding: 0.1rem 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-navbar {
+  text-align: center;
+  margin-top: 0.938rem;
+}
+.footer-navbar a {
+  color: seashell;
+  font-size: 1.125rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 0.3rem;
+}
+
+li {
+  display: contents;
+}
+ul {
+  display: contents;
+}
+.navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(29, 29, 35, 1) 0%,
+    rgba(58, 80, 107, 1) 35%,
+    rgba(58, 80, 107, 1) 100%
+  );
+  opacity: 90%;
+  grid-column: 1 / span 7;
+  padding: 0;
+}
+li {
+  float: right;
+}
+li a {
+  /* display: inline-block; */
+  color: seashell;
+  text-align: center;
+  padding: 14px 16px;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: slategrey;
+  border-radius: 1rem;
+}
+.org-logo {
+  font-size: 2em;
+  color: seashell
+}
+.nav-links li a.active {
+  border-radius: 1rem;
+  background-color: skyblue;
+}
+
+.body-news {
+  background-image: url(news-images/Charlotte-Skyline-2.png);
+  background-size: cover;
+}
+
+.news-header {
+  text-align: center;
+  color: seashell;
+  font-size: 3rem;
+  position: relative;
+  top: 1rem;
+}
+
+.news-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 1rem;
+}
+
+.news {
+  width: 18rem;
+  background-color: seashell;
+  margin: 3rem;
+}
+
+.news:hover {
+  transform: scale(1.08);
+  transition: 200ms ease-in;
+}
+
+.news h2,
+p,
+time,
+a {
+  margin: 0.4rem;
+  padding: 0.2rem;
+}
+
+.news img {
+  height: 12rem;
+  width: 18rem;
+}
+
+.news a {
+  text-decoration: none;
+  color: black;
+}
+
+.news a:hover {
+  color: aquamarine;
+}
+
+.sub-form {
+  color: seashell;
+  background-color: gray;
+  width: 40rem;
+  height: 4rem;
+  text-align: center;
+  padding-top: 0.2rem;
+  padding-right: 1rem;
+  border-radius: 3rem;
+  border: 0.18rem solid black;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 1rem;
+}
+
+#fname,
+#lname,
+#email {
+  height: 1.5rem;
+}
+
+.subscribe {
+  scale: 1.2;
+  position: relative;
+  left: 0.7rem;
+}
+
+.subscribe:hover {
+  background-color: aquamarine;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
